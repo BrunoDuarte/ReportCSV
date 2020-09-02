@@ -1,20 +1,25 @@
 import { config } from "process"
 
+interface Sprint {
+    Sprint: number
+    Capacity: number
+}
+
 class processReport {
 
-    public create(sprintCapacity: string[], epicSize: string[]) {
+    public create(sprintCapacity: Sprint[], epicSize: string[]) {
 
         // const indexSprint = sprintCapacity.findIndex(function(todo, index) {
         //     return todo
         // })
 
-        // sprintCapacity.map((key, value) => {
-        //     console.log(key.Sprint)
-        // })
+        sprintCapacity.map((key, value) => {
+            console.log(`${key.Sprint} -> ${key.Capacity}`)
+        })
 
         
 
-        console.log(sprintCapacity)
+        // console.log(sprintCapacity)
         // console.log(indexSprint)
         // const sprintJson = sprintCapacity.map(el => el)
 
