@@ -103,6 +103,11 @@ concat-map@0.0.1:
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
 
+convert-csv-to-json@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/convert-csv-to-json/-/convert-csv-to-json-1.0.0.tgz#ff8cd9ae4e9873c1c802a4b3d80b51010d3afc25"
+  integrity sha512-I4RfEq1MvRzE4nZAeWkZV/vl3LG/+EPdGcPQk+lom51eG8v0qKTWTtYPBP+Vq311T1Nc+sEI1LuyC1pX7mFoIA==
+
 csvtojson@^2.0.10:
   version "2.0.10"
   resolved "https://registry.yarnpkg.com/csvtojson/-/csvtojson-2.0.10.tgz#11e7242cc630da54efce7958a45f443210357574"

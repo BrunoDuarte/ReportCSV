@@ -1,4 +1,6 @@
 import csv from 'csvtojson'
+// import csvToJson from 'convert-csv-to-json'
+let csvToJson = require('convert-csv-to-json')
 import path from "path";
 
 class CsvToJson {
@@ -11,10 +13,12 @@ class CsvToJson {
         console.log(csvFilePathFirst)
         console.log(csvFilePathSecond)
 
-        const jsonArrayOne = await csv().fromFile(csvFilePathFirst)
+        // const jsonArrayOne = await csv().fromFile(csvFilePathFirst)
+        const jsonArrayOne = csvToJson.fieldDelimiter(',').getJsonFromCsv(csvFilePathFirst)
         delete jsonArrayOne[0]
 
-        const jsonArrayTwo = await csv().fromFile(csvFilePathSecond)
+        // const jsonArrayTwo = await csv().fromFile(csvFilePathSecond)
+        const jsonArrayTwo = csvToJson.fieldDelimiter(',').getJsonFromCsv(csvFilePathSecond)
         delete jsonArrayTwo[0]
         
         jsonArrayOne.shift()
